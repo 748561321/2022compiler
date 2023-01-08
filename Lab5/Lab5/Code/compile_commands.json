@@ -1,0 +1,308 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-I./src/IR_parse/include",
+      "-I./build/generate/IR_parse",
+      "-I./src/IR_optimize/include",
+      "-I./include",
+      "-O2",
+      "-o",
+      "build/obj/./src/main.o",
+      "src/main.c"
+    ],
+    "directory": "/home/hby/git/cmmc_optimizer",
+    "file": "/home/hby/git/cmmc_optimizer/src/main.c",
+    "output": "/home/hby/git/cmmc_optimizer/build/obj/src/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-I./src/IR_parse/include",
+      "-I./build/generate/IR_parse",
+      "-I./src/IR_optimize/include",
+      "-I./include",
+      "-O2",
+      "-o",
+      "build/obj/./src/container/treap.o",
+      "src/container/treap.c"
+    ],
+    "directory": "/home/hby/git/cmmc_optimizer",
+    "file": "/home/hby/git/cmmc_optimizer/src/container/treap.c",
+    "output": "/home/hby/git/cmmc_optimizer/build/obj/src/container/treap.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-I./src/IR_parse/include",
+      "-I./build/generate/IR_parse",
+      "-I./src/IR_optimize/include",
+      "-I./include",
+      "-O2",
+      "-o",
+      "build/obj/./src/IR/IR_symbol_allocator.o",
+      "src/IR/IR_symbol_allocator.c"
+    ],
+    "directory": "/home/hby/git/cmmc_optimizer",
+    "file": "/home/hby/git/cmmc_optimizer/src/IR/IR_symbol_allocator.c",
+    "output": "/home/hby/git/cmmc_optimizer/build/obj/src/IR/IR_symbol_allocator.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-I./src/IR_parse/include",
+      "-I./build/generate/IR_parse",
+      "-I./src/IR_optimize/include",
+      "-I./include",
+      "-O2",
+      "-o",
+      "build/obj/./src/IR/IR_display.o",
+      "src/IR/IR_display.c"
+    ],
+    "directory": "/home/hby/git/cmmc_optimizer",
+    "file": "/home/hby/git/cmmc_optimizer/src/IR/IR_display.c",
+    "output": "/home/hby/git/cmmc_optimizer/build/obj/src/IR/IR_display.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-I./src/IR_parse/include",
+      "-I./build/generate/IR_parse",
+      "-I./src/IR_optimize/include",
+      "-I./include",
+      "-O2",
+      "-o",
+      "build/obj/./src/IR/IR_stmt.o",
+      "src/IR/IR_stmt.c"
+    ],
+    "directory": "/home/hby/git/cmmc_optimizer",
+    "file": "/home/hby/git/cmmc_optimizer/src/IR/IR_stmt.c",
+    "output": "/home/hby/git/cmmc_optimizer/build/obj/src/IR/IR_stmt.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-I./src/IR_parse/include",
+      "-I./build/generate/IR_parse",
+      "-I./src/IR_optimize/include",
+      "-I./include",
+      "-O2",
+      "-o",
+      "build/obj/./src/IR/IR.o",
+      "src/IR/IR.c"
+    ],
+    "directory": "/home/hby/git/cmmc_optimizer",
+    "file": "/home/hby/git/cmmc_optimizer/src/IR/IR.c",
+    "output": "/home/hby/git/cmmc_optimizer/build/obj/src/IR/IR.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-I./src/IR_parse/include",
+      "-I./build/generate/IR_parse",
+      "-I./src/IR_optimize/include",
+      "-I./include",
+      "-O2",
+      "-o",
+      "build/obj/./src/IR/IR_function_append_sentence.o",
+      "src/IR/IR_function_append_sentence.c"
+    ],
+    "directory": "/home/hby/git/cmmc_optimizer",
+    "file": "/home/hby/git/cmmc_optimizer/src/IR/IR_function_append_sentence.c",
+    "output": "/home/hby/git/cmmc_optimizer/build/obj/src/IR/IR_function_append_sentence.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-I./src/IR_parse/include",
+      "-I./build/generate/IR_parse",
+      "-I./src/IR_optimize/include",
+      "-I./include",
+      "-O2",
+      "-o",
+      "build/obj/./src/IR/IR_function_build_graph.o",
+      "src/IR/IR_function_build_graph.c"
+    ],
+    "directory": "/home/hby/git/cmmc_optimizer",
+    "file": "/home/hby/git/cmmc_optimizer/src/IR/IR_function_build_graph.c",
+    "output": "/home/hby/git/cmmc_optimizer/build/obj/src/IR/IR_function_build_graph.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-I./src/IR_parse/include",
+      "-I./build/generate/IR_parse",
+      "-I./src/IR_optimize/include",
+      "-I./include",
+      "-O2",
+      "-o",
+      "build/obj/./src/IR_parse/IR_parse.o",
+      "src/IR_parse/IR_parse.c"
+    ],
+    "directory": "/home/hby/git/cmmc_optimizer",
+    "file": "/home/hby/git/cmmc_optimizer/src/IR_parse/IR_parse.c",
+    "output": "/home/hby/git/cmmc_optimizer/build/obj/src/IR_parse/IR_parse.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-I./src/IR_parse/include",
+      "-I./build/generate/IR_parse",
+      "-I./src/IR_optimize/include",
+      "-I./include",
+      "-O2",
+      "-o",
+      "build/obj/./src/IR_optimize/IR_optimize.o",
+      "src/IR_optimize/IR_optimize.c"
+    ],
+    "directory": "/home/hby/git/cmmc_optimizer",
+    "file": "/home/hby/git/cmmc_optimizer/src/IR_optimize/IR_optimize.c",
+    "output": "/home/hby/git/cmmc_optimizer/build/obj/src/IR_optimize/IR_optimize.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-I./src/IR_parse/include",
+      "-I./build/generate/IR_parse",
+      "-I./src/IR_optimize/include",
+      "-I./include",
+      "-O2",
+      "-o",
+      "build/obj/./src/IR_optimize/available_expressions_analysis.o",
+      "src/IR_optimize/available_expressions_analysis.c"
+    ],
+    "directory": "/home/hby/git/cmmc_optimizer",
+    "file": "/home/hby/git/cmmc_optimizer/src/IR_optimize/available_expressions_analysis.c",
+    "output": "/home/hby/git/cmmc_optimizer/build/obj/src/IR_optimize/available_expressions_analysis.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-I./src/IR_parse/include",
+      "-I./build/generate/IR_parse",
+      "-I./src/IR_optimize/include",
+      "-I./include",
+      "-O2",
+      "-o",
+      "build/obj/./src/IR_optimize/constant_propagation.o",
+      "src/IR_optimize/constant_propagation.c"
+    ],
+    "directory": "/home/hby/git/cmmc_optimizer",
+    "file": "/home/hby/git/cmmc_optimizer/src/IR_optimize/constant_propagation.c",
+    "output": "/home/hby/git/cmmc_optimizer/build/obj/src/IR_optimize/constant_propagation.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-I./src/IR_parse/include",
+      "-I./build/generate/IR_parse",
+      "-I./src/IR_optimize/include",
+      "-I./include",
+      "-O2",
+      "-o",
+      "build/obj/./src/IR_optimize/copy_propagation.o",
+      "src/IR_optimize/copy_propagation.c"
+    ],
+    "directory": "/home/hby/git/cmmc_optimizer",
+    "file": "/home/hby/git/cmmc_optimizer/src/IR_optimize/copy_propagation.c",
+    "output": "/home/hby/git/cmmc_optimizer/build/obj/src/IR_optimize/copy_propagation.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-I./src/IR_parse/include",
+      "-I./build/generate/IR_parse",
+      "-I./src/IR_optimize/include",
+      "-I./include",
+      "-O2",
+      "-o",
+      "build/obj/./src/IR_optimize/solver.o",
+      "src/IR_optimize/solver.c"
+    ],
+    "directory": "/home/hby/git/cmmc_optimizer",
+    "file": "/home/hby/git/cmmc_optimizer/src/IR_optimize/solver.c",
+    "output": "/home/hby/git/cmmc_optimizer/build/obj/src/IR_optimize/solver.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-I./src/IR_parse/include",
+      "-I./build/generate/IR_parse",
+      "-I./src/IR_optimize/include",
+      "-I./include",
+      "-O2",
+      "-o",
+      "build/obj/./src/IR_optimize/live_variable_analysis.o",
+      "src/IR_optimize/live_variable_analysis.c"
+    ],
+    "directory": "/home/hby/git/cmmc_optimizer",
+    "file": "/home/hby/git/cmmc_optimizer/src/IR_optimize/live_variable_analysis.c",
+    "output": "/home/hby/git/cmmc_optimizer/build/obj/src/IR_optimize/live_variable_analysis.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-I./src/IR_parse/include",
+      "-I./build/generate/IR_parse",
+      "-I./src/IR_optimize/include",
+      "-I./include",
+      "-O2",
+      "-o",
+      "build/obj/IR_lex.yy.o",
+      "build/generate/IR_parse/IR_lex.yy.c"
+    ],
+    "directory": "/home/hby/git/cmmc_optimizer",
+    "file": "/home/hby/git/cmmc_optimizer/build/generate/IR_parse/IR_lex.yy.c",
+    "output": "/home/hby/git/cmmc_optimizer/build/obj/IR_lex.yy.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-I./src/IR_parse/include",
+      "-I./build/generate/IR_parse",
+      "-I./src/IR_optimize/include",
+      "-I./include",
+      "-O2",
+      "-o",
+      "build/obj/IR_syntax.tab.o",
+      "build/generate/IR_parse/IR_syntax.tab.c"
+    ],
+    "directory": "/home/hby/git/cmmc_optimizer",
+    "file": "/home/hby/git/cmmc_optimizer/build/generate/IR_parse/IR_syntax.tab.c",
+    "output": "/home/hby/git/cmmc_optimizer/build/obj/IR_syntax.tab.o"
+  }
+]

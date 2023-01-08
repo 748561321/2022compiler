@@ -1,0 +1,143 @@
+FUNCTION func1 : 
+PARAM p2
+PARAM p1
+t1 := p1 + #0
+t2 := p2 + #0
+t0 := *t1 * *t2
+a1 := t0
+t5 := p1 + #4
+t6 := p2 + #4
+t0 := *t5 * *t6
+b1 := t0
+t9 := a1 + b1
+RETURN t9
+FUNCTION func2 : 
+PARAM p
+idx := #0
+LABEL label1 : 
+IF idx <= p GOTO label2
+GOTO label3
+LABEL label2 : 
+t0 := idx * idx
+i := t0
+t20 := #1
+t16 := idx + t20
+t23 := #1
+t17 := idx + t23
+t0 := t16 * t17
+j := t0
+t24 := #0
+IF p >= i GOTO label7
+GOTO label8
+LABEL label7 : 
+t24 := #1
+LABEL label8 : 
+IF t24 != #0 GOTO label6
+GOTO label5
+LABEL label6 : 
+t27 := #0
+IF p < j GOTO label9
+GOTO label10
+LABEL label9 : 
+t27 := #1
+LABEL label10 : 
+IF t27 != #0 GOTO label4
+GOTO label5
+LABEL label4 : 
+RETURN idx
+LABEL label5 : 
+t34 := #1
+t31 := idx + t34
+idx := t31
+GOTO label1
+LABEL label3 : 
+t37 := #1
+t35 := #0 - t37
+RETURN t35
+FUNCTION func3 : 
+PARAM pp2
+PARAM pp1
+ARG pp1
+ARG pp2
+t40 := CALL func1
+t1 := t40
+ARG t1
+t43 := CALL func2
+RETURN t43
+FUNCTION main : 
+arr_len := #2
+DEC arrS 40 
+idx1 := #0
+idx2 := #0
+LABEL label11 : 
+t46 := #2
+IF idx1 < t46 GOTO label12
+GOTO label13
+LABEL label12 : 
+t48 := #0
+idx2 := t48
+LABEL label14 : 
+t51 := #2
+IF idx2 < t51 GOTO label15
+GOTO label16
+LABEL label15 : 
+t60 := idx1 * #20
+t57 := &arrS + t60
+t61 := t57 + #4
+t56 := idx2 * #8
+t53 := t61 + t56
+t52 := t53 + #0
+t63 := idx1 * idx2
+t62 := t63 + idx2
+*t52 := t62
+t75 := idx1 * #20
+t72 := &arrS + t75
+t76 := t72 + #4
+t71 := idx2 * #8
+t68 := t76 + t71
+t67 := t68 + #4
+t80 := idx1 * idx1
+t78 := t80 * idx2
+t77 := t78 + idx2
+*t67 := t77
+t87 := #1
+t84 := idx2 + t87
+idx2 := t84
+GOTO label14
+LABEL label16 : 
+t92 := idx1 * #20
+t89 := &arrS + t92
+t88 := t89 + #-12
+t101 := idx1 * #20
+t98 := &arrS + t101
+t102 := t98 + #4
+t103 := #0
+t97 := t103 * #8
+t94 := t102 + t97
+t111 := idx1 * #20
+t108 := &arrS + t111
+t112 := t108 + #4
+t113 := #1
+t107 := t113 * #8
+t104 := t112 + t107
+ARG t94
+ARG t104
+t114 := CALL func3
+*t88 := t114
+t118 := #1
+t115 := idx1 + t118
+idx1 := t115
+GOTO label11
+LABEL label13 : 
+t125 := #0
+t124 := t125 * #20
+t121 := &arrS + t124
+t119 := t121 + #-12
+t130 := #1
+t129 := t130 * #20
+t126 := &arrS + t129
+t120 := t126 + #-12
+t0 := *t119 + *t120
+WRITE t0
+t132 := #0
+RETURN t132

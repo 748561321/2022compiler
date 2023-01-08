@@ -1,0 +1,12 @@
+FUNCTION main : 
+DEC bodies 120 
+o_cnt := #0
+i_cnt := #0
+temp9 := o_cnt * #40
+temp6 := &bodies + temp9
+temp10 := temp6 + #4
+temp5 := i_cnt * #12
+temp2 := temp10 + temp5
+temp1 := temp2 + #0
+temp12 := #1
+*temp1 := temp12

@@ -1,0 +1,143 @@
+FUNCTION_IR func1 
+PARAM_IR p2 
+PARAM_IR p1 
+PLUS_IR temp1 p1 0 
+PLUS_IR temp2 p2 0 
+STAR_IR temp0 *temp1 *temp2 
+ASSIGN_IR a1 temp0 
+PLUS_IR temp5 p1 4 
+PLUS_IR temp6 p2 4 
+STAR_IR temp0 *temp5 *temp6 
+ASSIGN_IR b1 temp0 
+PLUS_IR temp9 a1 b1 
+RETURN_IR temp9 
+FUNCTION_IR func2 
+PARAM_IR p 
+ASSIGN_IR idx 0 
+LABEL_IR label1 
+IF_GOTO_IR idx <= p label2 
+GOTO_IR label3 
+LABEL_IR label2 
+STAR_IR temp0 idx idx 
+ASSIGN_IR i temp0 
+ASSIGN_IR temp20 1 
+PLUS_IR temp16 idx temp20 
+ASSIGN_IR temp23 1 
+PLUS_IR temp17 idx temp23 
+STAR_IR temp0 temp16 temp17 
+ASSIGN_IR j temp0 
+ASSIGN_IR temp24 0 
+IF_GOTO_IR p >= i label7 
+GOTO_IR label8 
+LABEL_IR label7 
+ASSIGN_IR temp24 1 
+LABEL_IR label8 
+IF_GOTO_IR temp24 != 0 label6 
+GOTO_IR label5 
+LABEL_IR label6 
+ASSIGN_IR temp27 0 
+IF_GOTO_IR p < j label9 
+GOTO_IR label10 
+LABEL_IR label9 
+ASSIGN_IR temp27 1 
+LABEL_IR label10 
+IF_GOTO_IR temp27 != 0 label4 
+GOTO_IR label5 
+LABEL_IR label4 
+RETURN_IR idx 
+LABEL_IR label5 
+ASSIGN_IR temp34 1 
+PLUS_IR temp31 idx temp34 
+ASSIGN_IR idx temp31 
+GOTO_IR label1 
+LABEL_IR label3 
+ASSIGN_IR temp37 1 
+MINUS_IR temp35 0 temp37 
+RETURN_IR temp35 
+FUNCTION_IR func3 
+PARAM_IR pp2 
+PARAM_IR pp1 
+ARG_IR pp1 
+ARG_IR pp2 
+CALL_IR temp40 func1 
+ASSIGN_IR t1 temp40 
+ARG_IR t1 
+CALL_IR temp43 func2 
+RETURN_IR temp43 
+FUNCTION_IR main 
+ASSIGN_IR arr_len 2 
+DEC_IR arrS  40 
+ASSIGN_IR idx1 0 
+ASSIGN_IR idx2 0 
+LABEL_IR label11 
+ASSIGN_IR temp46 2 
+IF_GOTO_IR idx1 < temp46 label12 
+GOTO_IR label13 
+LABEL_IR label12 
+ASSIGN_IR temp48 0 
+ASSIGN_IR idx2 temp48 
+LABEL_IR label14 
+ASSIGN_IR temp51 2 
+IF_GOTO_IR idx2 < temp51 label15 
+GOTO_IR label16 
+LABEL_IR label15 
+STAR_IR temp60 idx1 20 
+PLUS_IR temp57 &arrS temp60 
+PLUS_IR temp61 temp57 4 
+STAR_IR temp56 idx2 8 
+PLUS_IR temp53 temp61 temp56 
+PLUS_IR temp52 temp53 0 
+STAR_IR temp63 idx1 idx2 
+PLUS_IR temp62 temp63 idx2 
+ASSIGN_IR *temp52 temp62 
+STAR_IR temp75 idx1 20 
+PLUS_IR temp72 &arrS temp75 
+PLUS_IR temp76 temp72 4 
+STAR_IR temp71 idx2 8 
+PLUS_IR temp68 temp76 temp71 
+PLUS_IR temp67 temp68 4 
+STAR_IR temp80 idx1 idx1 
+STAR_IR temp78 temp80 idx2 
+PLUS_IR temp77 temp78 idx2 
+ASSIGN_IR *temp67 temp77 
+ASSIGN_IR temp87 1 
+PLUS_IR temp84 idx2 temp87 
+ASSIGN_IR idx2 temp84 
+GOTO_IR label14 
+LABEL_IR label16 
+STAR_IR temp92 idx1 20 
+PLUS_IR temp89 &arrS temp92 
+PLUS_IR temp88 temp89 -12 
+STAR_IR temp101 idx1 20 
+PLUS_IR temp98 &arrS temp101 
+PLUS_IR temp102 temp98 4 
+ASSIGN_IR temp103 0 
+STAR_IR temp97 temp103 8 
+PLUS_IR temp94 temp102 temp97 
+STAR_IR temp111 idx1 20 
+PLUS_IR temp108 &arrS temp111 
+PLUS_IR temp112 temp108 4 
+ASSIGN_IR temp113 1 
+STAR_IR temp107 temp113 8 
+PLUS_IR temp104 temp112 temp107 
+ARG_IR temp94 
+ARG_IR temp104 
+CALL_IR temp114 func3 
+ASSIGN_IR *temp88 temp114 
+ASSIGN_IR temp118 1 
+PLUS_IR temp115 idx1 temp118 
+ASSIGN_IR idx1 temp115 
+GOTO_IR label11 
+LABEL_IR label13 
+ASSIGN_IR temp125 0 
+STAR_IR temp124 temp125 20 
+PLUS_IR temp121 &arrS temp124 
+PLUS_IR temp119 temp121 -12 
+ASSIGN_IR temp130 1 
+STAR_IR temp129 temp130 20 
+PLUS_IR temp126 &arrS temp129 
+PLUS_IR temp120 temp126 -12 
+PLUS_IR temp0 *temp119 *temp120 
+WRITE_IR temp0 
+ASSIGN_IR temp132 0 
+RETURN_IR temp132 
